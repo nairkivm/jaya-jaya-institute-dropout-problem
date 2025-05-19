@@ -118,16 +118,21 @@ Model prediktif yang dikembangkan menggunakan algoritma XGBoost berhasil mencapa
 Berdasarkan temuan proyek ini, berikut beberapa langkah yang direkomendasikan bagi pihak manajemen Jaya Jaya Institut:
 
 - Intervensi Dini Berdasarkan Faktor Risiko Utama
+
 Fokuskan program pembinaan pada mahasiswa dengan nilai semester awal rendah, status administrasi yang tidak lengkap (misalnya tunggakan biaya kuliah), serta mereka yang masuk melalui jalur seleksi non-umum seperti *Over 23 years old*.
 
 - Optimalisasi Dukungan Akademik dan Finansial
+
 Pertimbangkan pemberian beasiswa atau bantuan akademik (seperti tutor atau kelas remedial) bagi mahasiswa dengan profil risiko tinggi berdasarkan variabel yang telah dianalisis.
 
 - Penguatan Data Akademik dan Administratif
+
 Tingkatkan kualitas pelaporan dan integrasi data untuk memastikan bahwa semua variabel penting (nilai, unit kuliah, status beasiswa, dll.) tersedia dan terkini, demi menjaga keandalan sistem prediksi.
 
 - Penerapan Dashboard Monitoring Real-Time
+
 Gunakan dashboard interaktif yang telah dibuat sebagai alat bantu monitoring dan evaluasi performa akademik mahasiswa secara real-time oleh pihak manajemen dan dosen wali.
 
 - Implementasi Sistem Monitoring Risiko Dropout Berbasis Model Prediktif
+
 Gunakan model yang telah dikembangkan untuk secara berkala mengidentifikasi mahasiswa *enrolled* yang berisiko tinggi mengalami dropout, sehingga intervensi bisa dilakukan sejak dini.

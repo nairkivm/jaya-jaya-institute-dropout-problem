@@ -5,9 +5,11 @@ Jaya Jaya Institut adalah institusi pendidikan yang telah berdiri sejak tahun 20
 
 ### Permasalahan Bisnis
 Permasalahan utama yang dihadapi Jaya Jaya Institut adalah
-- Mengidentifikasi faktor apa saja yang mempengaruhi tingginya angka dropout
-- Memperkirakan berapa angka dropout di masa depan untuk mahasiswa yang tengah menempuh pendidikan (*Enrolled*)
-- Menyediakan apa saja solusi yang bisa ditawarkan untuk menekan angka dropout dengan berbasis data
+- Apakah ada pola bahwa mahasiswa yang *dropout* berasal dari kualifikasi sebelumnya yang tertentu?
+- Apakah mahasiswa yang *dropout* ada hubungannya dengan gender dan usia mereka?
+- Apakah ada hubungan antara daerah asal mahasiswa dengan status *dropout* mereka?
+- Bagaimana hubungan antara status dan nilai mahasiswa?
+- Apakah banyaknya *curricular units* yang diambil berhubungan dengan status mahasiswa?
 
 ### Cakupan Proyek
 Proyek ini bertujuan untuk membantu Jaya Jaya Institut dalam mengatasi permasalahan dropout dengan pendekatan berbasis data. Cakupan proyek meliputi:
@@ -108,7 +110,15 @@ Untuk menjalankan sistem prediksi, ikuti panduan [berikut](./app/README.md). red
 
 
 ## Conclusion
-Berdasarkan hasil analisis data dan pemodelan machine learning, ditemukan bahwa angka *dropout* mahasiswa di Jaya Jaya Institut mencapai angka yang cukup tinggi, yaitu 39,15% dari total mahasiswa yang sudah keluar kampus. 
+Berdasarkan hasil analisis data, ditemukan bahwa
+
+1. Mahasiswa *dropout* dan *graduate* polanya sama-sama didominasi oleh mereka yang berasal dari *Secondary education*. Namun, proporsi mahasiswa *dropout* dari kualifikasi ini sedikit lebih rendah dibanding *graduate*, meski tidak ditemukan perbedaan signifikan.
+2. Mahasiswa perempuan lebih dominan dalam kelompok *graduate*, terutama di rentang usia 15–22,5 tahun (77,87%). Sementara itu, pada kelompok *dropout*, proporsi pria dan wanita relatif seimbang di semua rentang usia.
+3. Tidak ditemukan hubungan yang signifikan antara status *dropout* dan faktor daerah asal seperti nationality, GDP regional, tingkat pengangguran, atau inflasi. Namun, ada kemungkinan kombinasi faktor mikro turut memengaruhi.
+4. Nilai akademik di semester 1 dan 2 menjadi indikator yang cukup kuat. Mahasiswa *dropout* cenderung memiliki nilai sangat rendah (0–9). Sebaliknya, *admission grade* dan *previous qualification grade* tidak memiliki pengaruh yang signifikan terhadap status mahasiswa.
+5. Mahasiswa *dropout* cenderung mengambil lebih sedikit *curricular units* pada semester awal, baik yang berhasil disetujui (*approved* di semester 1) maupun yang dievaluasi (*evaluated* di semester 2), dibandingkan mahasiswa *graduate*.
+
+Berdasarkan pemodelan *machine learning*, ditemukan bahwa angka *dropout* mahasiswa di Jaya Jaya Institut mencapai angka yang cukup tinggi, yaitu 39,15% dari total mahasiswa yang sudah keluar kampus. 
 
 Faktor-faktor utama yang memengaruhi risiko *dropout* meliputi kualifikasi pendidikan sebelumnya, usia dan jenis kelamin, nilai akademik awal (terutama pada semester 1 dan 2), jumlah curricular units yang diambil, serta kondisi daerah asal seperti status pembayaran uang kuliah dan kepemilikan beasiswa. Meskipun variabel ekonomi makro seperti GDP regional atau tingkat pengangguran tidak menunjukkan pola signifikan secara langsung, kombinasi variabel mikro tetap berpotensi besar dalam menjelaskan pola dropout.
 
